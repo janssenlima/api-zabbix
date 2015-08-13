@@ -79,7 +79,7 @@ def get_itservices():
         listaServicos += [x['serviceid']]
     return listaServicos
 
-def apagar_servicos():
+def delete_tree_itservies():
     for x in get_itservices():
         zapi.service.deletedependencies([x])
         zapi.service.delete([x])
