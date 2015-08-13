@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 11 22:36:58 2015
+#"""
+#Created on Tue Aug 11 22:36:58 2015
 
-@author: Janssen dos reis lima 
-@email : janssenreislima@gmail.com / janssen@conectsys.com.br
-@web   : conectsys.com.br / blog.conectsys.com.br
-"""
+#@author: Janssen dos reis lima 
+#@email : janssenreislima@gmail.com / janssen@conectsys.com.br
+#@web   : conectsys.com.br / blog.conectsys.com.br
+
+#Credits:  Luis Sales, who had the original idea and started the project using Shell Script.
+#http://redhate.me
+#luiz@lsales.biz
+
+#"""
 
 from zabbix_api import ZabbixAPI
 
