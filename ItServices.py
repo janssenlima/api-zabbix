@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Aug 11 22:36:58 2015
+
+@author: Janssen dos reis lima 
+@email : janssenreislima@gmail.com / janssen@conectsys.com.br
+@web   : conectsys.com.br / blog.conectsys.com.br
+"""
+
 from zabbix_api import ZabbixAPI
 
 # add the IP of your Zabbix Server
