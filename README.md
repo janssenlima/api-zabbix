@@ -1,2 +1,10 @@
-# api-zabbix
-Códigos para utilização da API do Zabbix
+    _    ____ ___   _____     _     _     _
+   / \  |  _ \_ _| |__  /__ _| |__ | |__ (_)_  __
+  / _ \ | |_) | |    / // _` | '_ \| '_ \| \ \/ /
+ / ___ \|  __/| |   / /| (_| | |_) | |_) | |>  <
+/_/   \_\_|  |___| /____\__,_|_.__/|_.__/|_/_/\_\
+
+http://blog.conectsys.com.br
+
+Codes for use Zabbix API
+
