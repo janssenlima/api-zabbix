@@ -34,12 +34,12 @@ No parameter is required
 $ python -c "execfile('itservices_zabbix.py'); get_hostgroups()"
 ```
 ##### list hosts of specific group
-Syntax:  get_hosts('<name_of_group')"
+Syntax:  get_hosts('<name_of_group>')"
 ```sh
 $ python -c "execfile('itservices_zabbix.py');  get_hosts('Linux servers')"
 ```
 ##### list items of a specific host that has associated trigger
-Syntax:  get_items_hosts('<name_of_host')"
+Syntax:  get_items_hosts('<name_of_host>')"
 ```sh
 $ python -c "execfile('itservices_zabbix.py');  get_hosts('Apache Web Server')"
 ```
