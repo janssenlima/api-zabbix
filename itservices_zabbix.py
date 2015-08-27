@@ -90,7 +90,7 @@ def delete_tree_itservies():
         zapi.service.delete([x])
 
 def mk_populate():
-    apagar_servicos()
+    delete_tree_itservies()
     for nomeGrupo in get_hostgroups():
         mk_father_itservices(nomeGrupo)
         for nomeHost in get_hosts(nomeGrupo):
