@@ -32,7 +32,9 @@ hostautomatico5;192.168.0.5
 .
 hostautomatico100;192.168.0.100
 ```
+
 >Just run
+
 ```sh
 $ python auto-add-hosts.py
 ```
