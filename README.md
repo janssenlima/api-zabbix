@@ -19,6 +19,7 @@ $ git clone https://github.com/janssenlima/api-zabbix
 
 #### auto-add-hosts.py
 >Change the file path in the code
+
 >Structure hosts.csv file
 
 ```sh
