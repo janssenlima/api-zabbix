@@ -17,6 +17,26 @@ $ git clone https://github.com/janssenlima/api-zabbix
 
 ## How to use - examples
 
+#### auto-add-hosts.py
+>Change the file path in the code
+
+>Structure hosts.csv file
+```sh
+hostautomatico1;192.168.0.1
+hostautomatico2;192.168.0.2
+hostautomatico3;192.168.0.3
+hostautomatico4;192.168.0.4
+hostautomatico5;192.168.0.5
+.
+.
+.
+hostautomatico100;192.168.0.100
+```
+>Just run
+```sh
+$ python auto-add-hosts.py
+```
+
 #### ack_event_zabbix.py
 >Inform the Event ID generated in Zabbix as a parameter
 
