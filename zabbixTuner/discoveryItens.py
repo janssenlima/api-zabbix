@@ -18,4 +18,4 @@ cont = 0
 for i in itemDisc:
     if i["itemDiscovery"]:
         cont += 1
-print "Quantidade de itens descobertos no ambiente: ", calc
+print "Quantidade de itens descobertos no ambiente: ", cont
