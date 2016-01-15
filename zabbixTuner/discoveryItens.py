@@ -4,7 +4,7 @@
 
 from zabbix_api import ZabbixAPI
 
-zapi = ZabbixAPI(server="http://localhost/zabbix",timeout=1000)
+zapi = ZabbixAPI(server="http://localhost/zabbix")
 login = zapi.login("Admin","zabbix")
 itemDisc = zapi.item.get({
     "output": "extend",
