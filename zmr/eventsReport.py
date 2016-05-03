@@ -39,9 +39,15 @@ for i in eventos:
             duracao = float(i["relatedObject"]["lastchange"]) - float(i["clock"])
             statusEvento = "INCIDENTE"
 
+        triggers = zapi.trigger.get ({            
+                                    "triggerids": i["relatedObject"]["triggerid"],
+                                    "output": ["description"],
+                                    "expandDescription": True
+                                    })
+
         pegadia = "{0.tm_yday}".format(time.gmtime(duracao))
         dia = int(pegadia) - 1
         horaMinuto = "d {0.tm_hour}h {0.tm_min}m {0.tm_sec}s".format(time.gmtime(duracao))
         duracaoEvento = str(dia)+str(horaMinuto)
         
-        print '{0:20} | {1:15} | {2:70} | {3:10} | {4}'.format(dataEvento, nomeHost, i["relatedObject"]["description"], statusEvento, duracaoEvento)
+        print '{0:20} | {1:15} | {2:70} | {3:10} | {4}'.format(dataEvento, nomeHost, triggers[0]["description"], statusEvento, duracaoEvento)
