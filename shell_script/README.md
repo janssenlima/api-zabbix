@@ -1,0 +1,2 @@
+# Coleção de códigos para API do Zabbix em Shell Script
+
