@@ -84,13 +84,13 @@ def get_itservices():
         listaServicos += [x['serviceid']]
     return listaServicos
 
-def delete_tree_itservies():
+def delete_tree_itservices():
     for x in get_itservices():
         zapi.service.deletedependencies([x])
         zapi.service.delete([x])
 
 def mk_populate():
-    delete_tree_itservies()
+    delete_tree_itservices()
     for nomeGrupo in get_hostgroups():
         mk_father_itservices(nomeGrupo)
         for nomeHost in get_hosts(nomeGrupo):
