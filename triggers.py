@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Desenvolvido por Janssen dos Reis Lima
 
