@@ -9,7 +9,7 @@
 You need lib zabbix-api and pip
 
 ```sh
-# apt-get install pip git
+# apt-get install python-pip git
 # pip install zabbix-api
 
 $ git clone https://github.com/janssenlima/api-zabbix
