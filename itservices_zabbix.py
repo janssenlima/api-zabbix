@@ -6,10 +6,6 @@
 #@email : janssenreislima@gmail.com / janssen@conectsys.com.br
 #@web   : conectsys.com.br / blog.conectsys.com.br
 
-#Credits:  Luis Sales, who had the original idea and started the project using Shell Script.
-#http://redhate.me
-#luiz@lsales.biz
-
 #"""
 
 from zabbix_api import ZabbixAPI
