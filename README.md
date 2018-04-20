@@ -87,8 +87,6 @@ Want to contribute? Great!
 
 Send suggestions, problems, errors etc for janssenreislima@gmail.com
 
-Visit http://blog.conectsys.com.br
-
 ### Todos
 
  - Do not list groups without hosts
