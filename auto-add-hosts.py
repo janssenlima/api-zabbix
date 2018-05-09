@@ -19,7 +19,6 @@ bar = ProgressBar(maxval=linhas,widgets=[Percentage(), ReverseBar(), ETA(), Rota
 i = 0
 
 for [hostname,ip] in f:
-    #print "Cadastrando host da linha ", f.line_num
     hostcriado = zapi.host.create(
         host= hostname,
         status= 1,
