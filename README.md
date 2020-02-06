@@ -77,6 +77,7 @@ $ python -c "execfile('itservices_zabbix.py');  get_triggers_hosts('Apache Web S
 ```
 ##### delete full service tree
 Syntax:  delete_tree_itservices()
+
 Deletes the entire tree
 ```sh
 $ python -c "execfile('itservices_zabbix.py');  delete_tree_itservices()"
