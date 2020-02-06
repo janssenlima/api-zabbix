@@ -52,19 +52,27 @@ $ python ack_event_zabbix.py <event.id>
 ##### list groups
 Syntaxy: get_hostgroups()
 
-No parameter is required
+By default, it returns all groups. Optionally, you can enter a name to search for the group, including using the wildcard *.
 ```sh
 $ python -c "execfile('itservices_zabbix.py'); get_hostgroups()"
+$ python -c "execfile('itservices_zabbix.py'); get_hostgroups('Linux servers')"
+$ python -c "execfile('itservices_zabbix.py'); get_hostgroups('*servers*')"
 ```
 ##### list hosts of specific group
 Syntax:  get_hosts('<name_of_group>')"
+Returns all active hosts in a given group. Search only for the exact name of the group.
 ```sh
 $ python -c "execfile('itservices_zabbix.py');  get_hosts('Linux servers')"
 ```
 ##### list items of a specific host that has associated trigger
 Syntax:  get_items_hosts('<name_of_host>')"
 ```sh
-$ python -c "execfile('itservices_zabbix.py');  get_hosts('Apache Web Server')"
+$ python -c "execfile('itservices_zabbix.py');  get_items_hosts('Apache Web Server')"
+```
+##### list triggers of a specific host
+Syntax:  get_triggers_hosts('<name_of_host>')"
+```sh
+$ python -c "execfile('itservices_zabbix.py');  get_triggers_hosts('Apache Web Server')"
 ```
 ##### delete full service tree
 Syntax:  delete_tree_itservices()
