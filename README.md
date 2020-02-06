@@ -2,7 +2,8 @@
 
 ## Codes for use Zabbix API
   - ack_event_zabbix.py
-  - itervices_zabbix.py
+  - itservices_zabbix.py
+  - auto-add-hosts.py
    
 ## Installation
 
@@ -76,17 +77,24 @@ $ python -c "execfile('itservices_zabbix.py');  get_triggers_hosts('Apache Web S
 ```
 ##### delete full service tree
 Syntax:  delete_tree_itservices()
-
-No parameter is required
+Deletes the entire tree
 ```sh
 $ python -c "execfile('itservices_zabbix.py');  delete_tree_itservices()"
+```
+You can pass groups separated by commas.
+```sh
+$ python -c "execfile('itservices_zabbix.py');  delete_tree_itservices('Linux servers, Zabbix servers')"
 ```
 ##### automatically create service tree
 Syntax:  mk_populate()
 
-No parameter is required
+Included all groups that have enabled hosts, with items and triggers.
 ```sh
 $ python -c "execfile('itservices_zabbix.py');  mk_populate()"
+```
+You can pass groups separated by commas.
+```sh
+$ python -c "execfile('itservices_zabbix.py');  mk_populate('Linux servers, Zabbix servers')"
 ```
 
 ### Development
@@ -97,7 +105,7 @@ Send suggestions, problems, errors etc for janssenreislima@gmail.com
 
 ### Todos
 
- - Do not list groups without hosts
  - Create menu for selecting options and call the internal modules
+ - Create Docker image 
  - And others
 
