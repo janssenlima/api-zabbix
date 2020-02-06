@@ -14,7 +14,7 @@ import sys
 from zabbix_api import ZabbixAPI
 
 SLA = "99.99"
-zbx_server = "http://127.0.0.1:5555/"
+zbx_server = "http://127.0.0.1/zabbix"
 user = "Admin"
 password = "zabbix"
 
@@ -28,11 +28,9 @@ zapi.login(user, password)
 def get_hostgroups(hostGroups='*'):
 	hostgroups = zapi.hostgroup.get(
 		{"output": "extend", "search": {"name": hostGroups}, "searchByAny": True, "searchWildcardsEnabled": True})
-	
 	listaGrupos = []
 	for x in hostgroups:
 		if 'template' not in str(x['name']).lower():
-			print x['name']
 			listaGrupos += [x['name']]
 	return listaGrupos
 
@@ -51,7 +49,6 @@ def get_hosts(grupo):
 		{"groupids": get_hostgroups_id(grupo), "output": ["host", "name"], "filter": {"status": 0}})
 	listaHosts = []
 	for x in hosts_grupo:
-		print x['name']
 		listaHosts += [x['name']]
 	return listaHosts
 
