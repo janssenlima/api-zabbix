@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Apr 09 18:37:18 2015
+Updated on Thu Jul 16 10:31:20 2020
 
 @author: Janssen dos Reis Lima
 
@@ -17,4 +17,4 @@ password = "pass"
 zapi = ZabbixAPI(server = zabbix_server)
 zapi.login(username, password)
 
-zapi.event.acknowledge({"eventids": sys.argv[1], "message": "Checking the problem."})
+zapi.event.acknowledge({"eventids": sys.argv[1], "action": 6 , "message": "Checking the problem."})
